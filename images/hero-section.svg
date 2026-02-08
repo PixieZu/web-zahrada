@@ -1,14 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
-  <rect width="800" height="600" fill="pink" />
-  <path d="M0,500 C200,350 600,450 800,300 L800,600 L0,600 Z" fill="darkblue" />
-  <circle cx="150" cy="400" r="30" fill="yellow" />
-  <circle cx="250" cy="450" r="25" fill="red" />
-  <circle cx="350" cy="400" r="35" fill="purple" />
-  <circle cx="450" cy="420" r="20" fill="orange" />
-  <circle cx="550" cy="450" r="30" fill="pink" />
-  <line x1="150" y1="400" x2="150" y2="500" stroke="green" stroke-width="5" />
-  <line x1="250" y1="450" x2="250" y2="500" stroke="green" stroke-width="5" />
-  <line x1="350" y1="400" x2="350" y2="500" stroke="green" stroke-width="5" />
-  <line x1="450" y1="420" x2="450" y2="500" stroke="green" stroke-width="5" />
-  <line x1="550" y1="450" x2="550" y2="500" stroke="green" stroke-width="5" />
-</svg>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden Design</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to bottom, #FFB6C1, #FF69B4);
+            position: relative;
+            overflow: hidden;
+        }
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: #2F4F4F;
+            clip-path: polygon(0 100%, 50% 60%, 100% 100%);
+        }
+        .flower {
+            position: absolute;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="wave"></div>
+        <div class="flower" style="top: 30%; left: 10%; width: 50px; height: 50px; background: #FF4500;"></div>
+        <div class="flower" style="top: 20%; left: 30%; width: 60px; height: 60px; background: #FF6347;"></div>
+        <div class="flower" style="top: 40%; left: 50%; width: 40px; height: 40px; background: #FFD700;"></div>
+        <div class="flower" style="top: 15%; left: 70%; width: 70px; height: 70px; background: #7FFF00;"></div>
+        <div class="flower" style="top: 5%; left: 80%; width: 80px; height: 80px; background: #40E0D0;"></div>
+    </div>
+</body>
+</html>
