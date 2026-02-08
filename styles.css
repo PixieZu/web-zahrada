@@ -1,0 +1,90 @@
+/* Styles for Webová zahrada website */
+
+/* CSS Variables */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #FFA500;
+    --font-family: 'Helvetica, Arial, sans-serif';
+    --border-radius: 8px;
+    --transition-time: 0.3s;
+}
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    line-height: 1.6;
+    transition: background var(--transition-time);
+}
+
+/* Glassmorphism Effects */
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    transition: transform var(--transition-time);
+}
+.glass:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) { /* Desktop */
+    body {
+        font-size: 18px;
+    }
+}
+@media (max-width: 900px) { /* Tablet */
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+@media (max-width: 600px) { /* Mobile */
+    body {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+@media (min-width: 2560px) { /* 4K */
+    body {
+        font-size: 24px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.fade-in {
+    animation: fadeIn var(--transition-time) forwards;
+}
+
+/* Modern Design Elements */
+.header {
+    background: var(--primary-color);
+    padding: 10px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.header h1 {
+    color: white;
+}
+
+.footer {
+    background: var(--secondary-color);
+    padding: 10px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    color: white;
+}
