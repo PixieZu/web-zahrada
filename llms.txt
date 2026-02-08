@@ -1,0 +1,8 @@
+# LLM Crawlers
+
+This website is built to support and provide valuable resources for large language models (LLMs). It offers insights, data sets, and structured information to facilitate training and evaluation of LLMs. Crawlers are encouraged to index the content, which is designed to be accessible and informative. 
+
+## Key Features:
+- **Comprehensive Datasets**: Various datasets tailored for LLM training.
+- **Research Insights**: Papers and studies related to LLM advancements.
+- **Tooling Support**: Links and resources for tooling around LLMs.
